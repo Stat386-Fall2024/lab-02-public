@@ -1,21 +1,22 @@
 # Lab 2: Anaconda , VS Code, and Python Practice
 
 ## 1. Anaconda virtual environment 
-Create a (conda) virtual environment for our class. Type (or copy and paste) the following commands in order (and one at a time) in the terminal or Anaconda prompt.  Type `y` when you are asked if you want to proceed after each command.
+If you haven't already done so, create a virtual environment for our class.  The instructions below are for using conda, but you are free to use any environment managers (though the TAs and I are most familiar with conda).  Type (or copy and paste) the following commands in order (and one at a time) in the terminal or Anaconda prompt.  Type `y` when you are asked if you want to proceed after each command.
+
+*Note: In (1.), the conda environment that I am using is called "classes24".  Feel free to use any environment name that makes the most sense for you. 
+
 1. Create the environment
 
-    ```conda create --name stat386 python beautifulsoup4 hdf5 html5lib ipykernel jupyter ipython matplotlib matplotlib-inline nltk notebook numpy openpyxl pandas pillow requests scikit-learn scrapy seaborn scipy statsmodels```
+    ```conda create --name classes24 python beautifulsoup4 hdf5 html5lib ipykernel jupyter ipython matplotlib matplotlib-inline nltk notebook numpy openpyxl pandas pillow requests scikit-learn scrapy seaborn scipy statsmodels plotnine streamlit plotly```
+
 2. Activate the environment you just created:
 
-    ```conda activate stat386```
+    ```conda activate classes24```
 
-3. Install plotly (available from the plotly channel)
+3. Install other packages from conda forge
 
-    ```conda install -c plotly plotly```
-4. Install streamlit (available from pip)
+    ```conda install -c conda-forge selenium pingouin webdriver-manager```  
 
-    ```pip install streamlit```  
-    ```pip install -U selenium```
 
 ## 2. VS Code
 1. Install the following extensions.  To install an extension, click on the "Extensions" icon on the left most toolbar, search for the extension name in the search bar, and click the "Install" button.  
@@ -23,14 +24,14 @@ Create a (conda) virtual environment for our class. Type (or copy and paste) the
     * Python (by Microsoft)
     * Jupyter (by Microsoft)
 2. Sign into GitHub through VS Code by clicking on the "GitHub" icon on the left most toolbar and clicking "Sign in".
-3. When you run a .ipynb file, choose the kernel (top right) to be the "stat386" environment.  When you run a .py file, you specify the kernel on the bottom right. 
+3. When you run a .ipynb file, choose the kernel (top right) to be the "classes24" environment.  When you run a .py file, you specify the kernel on the bottom right. 
 
 
 
 ## 3. Python review questions.
 
-* When you accepted the assignment in GitHub Classroom, a repository named `lab-02` will be automatically generated for you under the "stat386-Winter2024" organization.
-* Your personal repository for this homework can be found at `https://github.com/stat386-Winter2024/lab-02-your_user_name`.
+* When you accepted the assignment in GitHub Classroom, a repository named `lab-02` will be automatically generated for you under the "stat386-Fall2024" organization.
+* Your personal repository for this homework can be found at `https://github.com/stat386-Fall2024/lab-02-your_user_name`.
 * *Clone the Repository*: 
     - Open your terminal and navigate to the directory where you want to download the repository.
     - Run `git clone [your repository URL]` to clone the repository onto your local machine.
@@ -45,7 +46,7 @@ Create a (conda) virtual environment for our class. Type (or copy and paste) the
     - You are free to include other `.py` or `.ipynb` files with your work. However, ensure that `lab2.py` only contains your final code for each function.
 
 * *Submitting on Gradescope*: 
-    - Once you've completed the assignment, go to Gradescope and select your personal homework repository (`https://github.com/stat386-Winter2024/lab-02-your_user_name`) as the source for your submission.
+    - Once you've completed the assignment, go to Gradescope and select your personal homework repository (`https://github.com/stat386-Fall2024/lab-02-your_user_name`) as the source for your submission.
     
 
  NOTE:  
